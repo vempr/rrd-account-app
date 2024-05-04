@@ -12,7 +12,6 @@ import AccountCompany from "./pages/account/AccountCompany";
 const router = createHashRouter([
   {
     element: <Layout />,
-    path: "#",
     children: [
       {
         path: "/",
