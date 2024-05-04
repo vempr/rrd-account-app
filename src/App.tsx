@@ -12,6 +12,7 @@ import AccountCompany from "./pages/account/AccountCompany";
 const router = createBrowserRouter([
   {
     element: <Layout />,
+    path: "/rrd-account-app",
     children: [
       {
         path: "/",
