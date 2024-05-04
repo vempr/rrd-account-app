@@ -15,15 +15,15 @@ const router = createBrowserRouter([
     path: "/rrd-account-app",
     children: [
       {
-        path: "/",
+        index: true,
         element: <Home />,
       },
       {
-        path: "/accounts",
+        path: "accounts",
         element: <Accounts />,
       },
       {
-        path: "/account/:id",
+        path: "account/:id",
         element: <Account />,
         children: [
           {
@@ -41,7 +41,7 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "/about",
+        path: "about",
         element: <About />,
       },
       {
