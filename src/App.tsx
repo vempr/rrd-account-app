@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import Layout from "./components/Layout";
 import NotFound from "./components/NotFound";
 import Home from "./pages/home/Home";
@@ -9,10 +9,10 @@ import AccountGeneral from "./pages/account/AccountGeneral";
 import AccountAddress from "./pages/account/AccountAddress";
 import AccountCompany from "./pages/account/AccountCompany";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     element: <Layout />,
-    path: "/rrd-account-app",
+    path: "#",
     children: [
       {
         index: true,
