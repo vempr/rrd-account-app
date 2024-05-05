@@ -74,7 +74,7 @@ export default function Account() {
             context={{ account: data as AccountType, loading: isLoading }}
           />
         </div>
-        <button className="rounded-lg border px-4 py-2 text-2xl font-bold transition-all duration-100 [word-spacing:-3px] hover:bg-emerald-400 hover:text-black active:bg-emerald-600">
+        <button className="rounded-lg border px-4 py-2 text-2xl font-bold transition-all duration-100 hover:bg-emerald-400 hover:text-black active:bg-emerald-600">
           Buy Account
         </button>
       </div>

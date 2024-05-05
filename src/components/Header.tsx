@@ -1,8 +1,13 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
 export default function Header() {
   const [hamburgerActive, setHamburgerActive] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setHamburgerActive(false);
+  }, [location.pathname]);
 
   const underline = ({ isActive }: { isActive: boolean }) =>
     isActive ? "font-bold" : "";

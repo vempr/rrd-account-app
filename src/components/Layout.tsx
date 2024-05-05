@@ -8,7 +8,7 @@ export default function Layout() {
   return (
     <>
       <ScrollToTop />
-      <div className="font-wendelin min-h-screen max-w-[100vw] flex-wrap overflow-hidden bg-black text-white [word-spacing:-3px] lg:max-w-full">
+      <div className="font-inter min-h-screen max-w-[100vw] flex-wrap overflow-hidden bg-black text-white lg:max-w-full">
         <Header />
         <Hr />
 

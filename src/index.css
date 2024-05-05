@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: "Wendelin";
-	src: url("./fonts/WendelinNormal.ttf");
+  font-family: "Inter";
+  src: url("./fonts/inter/Inter-VariableFont_slnt\,wght.ttf");
 }

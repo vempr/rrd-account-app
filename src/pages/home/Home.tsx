@@ -6,7 +6,7 @@ export default function Home() {
     <div>
       <section className="my-10 flex flex-col items-center justify-center lg:mb-40 lg:flex-row">
         <div className="w-[70vw] lg:w-[33rem]">
-          <h1 className="text-4xl font-semibold [word-spacing:-7px]">
+          <h1 className="text-4xl font-semibold">
             Needs accounts? We got you.
           </h1>
           <p className="text-xl">
@@ -21,9 +21,7 @@ export default function Home() {
       </section>
 
       <section className="mx-10 my-24 flex flex-col gap-y-3">
-        <h2 className="text-3xl font-bold [word-spacing:-10px]">
-          Why Choose Our Accounts?
-        </h2>
+        <h2 className="text-3xl font-bold">Why Choose Our Accounts?</h2>
         <p>
           Our accounts are designed with your needs in mind. Whether you're a
           seasoned investor or just starting out, we offer a variety of account
@@ -38,7 +36,7 @@ export default function Home() {
 
       <section className="my-30 mx-[25vw] flex flex-col gap-y-8 text-center">
         <div>
-          <blockquote className="opacity-80 [word-spacing:-5px] lg:text-2xl">
+          <blockquote className="opacity-80 lg:text-2xl">
             I've been using their accounts for years now, and I couldn't be
             happier. The customer service is top-notch, and the rates are
             unbeatable.
@@ -46,7 +44,7 @@ export default function Home() {
           <p className="text-sm font-semibold italic">John Doe</p>
         </div>
         <div>
-          <blockquote className="opacity-80 [word-spacing:-5px] lg:text-2xl">
+          <blockquote className="opacity-80 lg:text-2xl">
             Switching to their accounts was one of the best financial decisions
             I've made. The process was seamless, and I've seen significant
             growth in my savings.
@@ -54,7 +52,7 @@ export default function Home() {
           <p className="text-sm font-semibold italic">Jane Smith</p>
         </div>
         <div>
-          <blockquote className="opacity-80 [word-spacing:-5px] lg:text-2xl">
+          <blockquote className="opacity-80 lg:text-2xl">
             I love how easy it is to manage my accounts online. The interface is
             intuitive, and I feel in control of my finances every step of the
             way.
@@ -64,9 +62,7 @@ export default function Home() {
       </section>
 
       <section className="mx-10 mb-5 mt-20 flex flex-col gap-y-3">
-        <h4 className="text-3xl font-bold [word-spacing:-10px]">
-          What Are You Waiting For?
-        </h4>
+        <h4 className="text-3xl font-bold">What Are You Waiting For?</h4>
         <p>
           Don't miss out on the opportunity to experience the benefits of {""}
           <Link to="/accounts" className="font-bold underline">

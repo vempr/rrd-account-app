@@ -8,7 +8,7 @@ export default {
       },
     },
     fontFamily: {
-      wendelin: ["Wendelin", "sans-serif"],
+      inter: ["Inter", "sans-serif"],
     },
   },
   plugins: [],
