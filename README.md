@@ -4,6 +4,8 @@
 
 Users can browse and "buy" accounts fetched from the JSONPlaceholder API. Purchased accounts are displayed on the host page.
 
+*Todo: Update how environment variables are setup because I pushed and then deleted the env file to the repo.*
+
 ## Stack
 - **Language**: React
 - **Type Checking:** TypeScript, Zod
