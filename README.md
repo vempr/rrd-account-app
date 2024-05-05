@@ -1,6 +1,6 @@
-# AccStore App
+# AccStore SPA
 
-[AccStore App](https://vempr.github.io/rrd-account-app/) is a single-page application built primarily for practicing React Router and layout design, after I took Scrimba's course.
+[AccStore](https://vempr.github.io/rrd-account-app/) is a single-page application built primarily for practicing React Router and layout design, after I took Scrimba's course.
 
 Users can browse and "buy" accounts fetched from the JSONPlaceholder API. Purchased accounts are displayed on the host page.
 
