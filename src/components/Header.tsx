@@ -54,7 +54,7 @@ export default function Header() {
   const mobileNavMenu = (
     <ul
       role="menubar"
-      className={`${hamburgerActive ? "absolute" : "hidden"} right-8 top-28 bg-white px-4 py-2 text-right text-2xl text-black shadow-2xl shadow-black`}
+      className={`${hamburgerActive ? "absolute" : "hidden"} right-8 top-28 z-10 bg-white px-4 py-2 text-right text-2xl text-black shadow-2xl shadow-black`}
     >
       <li role="none">
         <NavLink role="menuitem" to="/" className={underline}>
@@ -84,8 +84,16 @@ export default function Header() {
       <NavLink to="/" className="text-4xl font-bold">
         AccStore
       </NavLink>
-      <nav className="hidden lg:block">{lgNav}</nav>
-      <nav className="block lg:hidden">
+      <nav
+        className="hidden lg:block"
+        aria-label="Navigate through the entire website"
+      >
+        {lgNav}
+      </nav>
+      <nav
+        className="block lg:hidden"
+        aria-label="Navigate through the entire website"
+      >
         <div className="flex items-center">{mobileNavButton}</div>
         {mobileNavMenu}
       </nav>

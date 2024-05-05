@@ -6,7 +6,7 @@ interface CardProps {
   filter: string | null;
 }
 
-export default function UserCard({ user, filter }: CardProps) {
+export default function AccountsCard({ user, filter }: CardProps) {
   return (
     <Link to={`/account/${user.id}`} state={{ filter: filter }}>
       <section className="w-[calc(100vw-75px)] rounded-lg border p-6 transition-opacity hover:opacity-80 lg:w-96">

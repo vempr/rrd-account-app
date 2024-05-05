@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <section className="my-10 flex flex-col items-center justify-center lg:mb-40 lg:flex-row">
-        <div className="w-[70vw] lg:w-[33rem]">
+        <div className="flex w-[70vw] flex-col gap-y-2 lg:w-[33rem]">
           <h1 className="text-4xl font-semibold">
             Needs accounts? We got you.
           </h1>
@@ -35,7 +35,7 @@ export default function Home() {
       </section>
 
       <section className="my-30 mx-[25vw] flex flex-col gap-y-8 text-center">
-        <div>
+        <div className="flex flex-col gap-y-1">
           <blockquote className="opacity-80 lg:text-2xl">
             I've been using their accounts for years now, and I couldn't be
             happier. The customer service is top-notch, and the rates are
@@ -43,7 +43,7 @@ export default function Home() {
           </blockquote>
           <p className="text-sm font-semibold italic">John Doe</p>
         </div>
-        <div>
+        <div className="flex flex-col gap-y-1">
           <blockquote className="opacity-80 lg:text-2xl">
             Switching to their accounts was one of the best financial decisions
             I've made. The process was seamless, and I've seen significant
@@ -51,7 +51,7 @@ export default function Home() {
           </blockquote>
           <p className="text-sm font-semibold italic">Jane Smith</p>
         </div>
-        <div>
+        <div className="flex flex-col gap-y-1">
           <blockquote className="opacity-80 lg:text-2xl">
             I love how easy it is to manage my accounts online. The interface is
             intuitive, and I feel in control of my finances every step of the

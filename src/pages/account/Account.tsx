@@ -7,8 +7,11 @@ import {
   useParams,
 } from "react-router-dom";
 import { useGetUserByIdQuery } from "../../services/usersApi";
+import { useAppDispatch, useAppSelector } from "../../hooks/storeHooks";
+import { buyAccount } from "../../store/features/host/hostSlice";
 import { AccountType } from "../../schema/accountSchema";
 import AccountSkeletonLoader from "./AccountSkeletonLoader";
+import arrowBack from "../../images/arrow-back.svg";
 
 type ContextType = {
   account: AccountType;
@@ -18,6 +21,9 @@ type ContextType = {
 export default function Account() {
   const [link, setLink] = useState("");
   const [display, setDisplay] = useState("");
+
+  const accounts = useAppSelector((state) => state.host.accounts);
+  const dispatch = useAppDispatch();
 
   const { id } = useParams();
   const location = useLocation();
@@ -41,6 +47,11 @@ export default function Account() {
     }
   }, [filter]);
 
+  const accountBought = accounts.some((account) => account.id === Number(id));
+  const buy = () => {
+    if (!accountBought && data) dispatch(buyAccount(data));
+  };
+
   const underline = ({ isActive }: { isActive: boolean }) =>
     isActive
       ? "rounded-xl border px-2 py-1 font-bold bg-neutral-800"
@@ -51,8 +62,12 @@ export default function Account() {
       <div className="flex w-screen flex-col items-center">
         <div className="mb-4 text-sm font-bold lg:text-base">
           <NavLink
-            to={`/accounts${link}`}
-          >{`<-  Back to ${display} Accounts`}</NavLink>
+            to={`../accounts${link}`}
+            className="flex flex-row items-center gap-x-2"
+          >
+            <img className="h-7" src={arrowBack} />
+            <p>Back to {display} Accounts</p>
+          </NavLink>
         </div>
         <div className="text-center">
           <h1 className="text-2xl font-bold">{data.username}</h1>
@@ -74,8 +89,11 @@ export default function Account() {
             context={{ account: data as AccountType, loading: isLoading }}
           />
         </div>
-        <button className="rounded-lg border px-4 py-2 text-2xl font-bold transition-all duration-100 hover:bg-emerald-400 hover:text-black active:bg-emerald-600">
-          Buy Account
+        <button
+          onClick={buy}
+          className={`${accountBought ? "bg-emerald-600 text-black" : ""} rounded-lg border px-4 py-2 text-2xl font-bold transition-all duration-100 hover:bg-emerald-400 hover:text-black active:bg-emerald-600`}
+        >
+          {accountBought ? "Account Bought!" : "Buy Account"}
         </button>
       </div>
     );

@@ -1,8 +1,8 @@
 import { Link, useSearchParams } from "react-router-dom";
 import { useGetAllUsersQuery } from "../../services/usersApi";
 import { AccountType } from "../../schema/accountSchema";
-import UserCard from "./UserCard";
-import SkeletonUserCard from "./SkeletonUserCard";
+import AccountsCard from "./AccountsCard";
+import AccountsSkeletonCard from "./AccountsSkeletonCard";
 
 export default function Accounts() {
   const [URLSearchParams] = useSearchParams();
@@ -21,12 +21,12 @@ export default function Accounts() {
     : data;
 
   const userCardComponents = filteredData?.map((user: AccountType) => (
-    <UserCard key={user.id} user={user} filter={filter} />
+    <AccountsCard key={user.id} user={user} filter={filter} />
   ));
 
   const skeletonComponents = Array(10)
     .fill(null)
-    .map((_, index) => <SkeletonUserCard key={index} />);
+    .map((_, index) => <AccountsSkeletonCard key={index} />);
 
   if (isLoading) {
     return (
