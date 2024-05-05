@@ -38,18 +38,20 @@ export default function Accounts() {
 
   return (
     <div className="mx-10">
-      <div className="flex -translate-y-4 flex-row items-center gap-x-2">
-        <p>Filter by Id</p>
-        <div className="flex flex-row gap-x-2 text-sm">
-          <Link to="?filter=odd" className={activeButton("odd")}>
-            Odd
-          </Link>
-          <Link to="?filter=even" className={activeButton("even")}>
-            Even
-          </Link>
-          <Link to="" className={activeButton("")}>
-            None
-          </Link>
+      <div className="ultrawide:absolute ultrawide:left-10 ultrawide:top-36">
+        <div className="flex -translate-y-4 flex-row items-center gap-x-2">
+          <p>Filter by Id</p>
+          <div className="flex flex-row gap-x-2 text-sm">
+            <Link to="?filter=odd" className={activeButton("odd")}>
+              Odd
+            </Link>
+            <Link to="?filter=even" className={activeButton("even")}>
+              Even
+            </Link>
+            <Link to="" className={activeButton("")}>
+              None
+            </Link>
+          </div>
         </div>
       </div>
       <div className="flex flex-row flex-wrap gap-6">{userCardComponents}</div>

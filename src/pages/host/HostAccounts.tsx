@@ -10,7 +10,7 @@ export default function Dashboard() {
         <HostAccountCard account={account} />
       ))}
       {accounts.length === 0 ? (
-        <h1 className="-translate-y-8">
+        <h1 className="-translate-y-2">
           You don't have any accounts. Head over to the{" "}
           <Link to="/accounts" className="font-bold underline">
             accounts page

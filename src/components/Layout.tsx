@@ -12,7 +12,7 @@ export default function Layout() {
         <Header />
         <Hr />
 
-        <div className="my-10 flex min-h-[calc(100vh-320px)] items-center">
+        <div className="my-10 flex min-h-[calc(100vh-330px)] items-center">
           <Outlet />
         </div>
 
