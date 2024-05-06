@@ -1,10 +1,6 @@
 # AccStore SPA
 
-[AccStore](https://vempr.github.io/rrd-account-app/) is a single-page application built primarily for practicing React Router and layout design, after I took Scrimba's course.
-
-Users can browse and "buy" accounts fetched from the JSONPlaceholder API. Purchased accounts are displayed on the host page.
-
-*Todo: Update how environment variables are setup because I pushed and then deleted the env file to the repo.*
+[AccStore](https://vempr.github.io/rrd-account-app/) is a single-page application built primarily for practicing React Router and layout design, after I took Scrimba's course. Users can browse and "buy" accounts fetched from the JSONPlaceholder API. Purchased accounts are displayed on the host page.
 
 ## Stack
 - **Language**: React
@@ -16,7 +12,7 @@ Users can browse and "buy" accounts fetched from the JSONPlaceholder API. Purcha
 
 ## APIs
 - Mock accounts from **JSONPlaceholder**
-- Reversed geo location using **LocationIq's API** (disabled by default because JSONPlaceholder's API returns invalid coordinates; it works though!)
+- Reversed geo location using **LocationIq's API** (using NY's coordinates by default because JSONPlaceholder's API returns invalid coordinates; it works though!)
 
 ## Contributing
 Contributions are welcome! Please submit pull requests or open issues for any suggestions or improvements.
