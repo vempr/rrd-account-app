@@ -15,9 +15,9 @@ export const locationApi = createApi({
     getCityGeo: builder.query<LocationType, Geo>({
       query: ({ lat, lon }: Geo) =>
         `?key=${import.meta.env.VITE_APP_API_KEY}&lat=${lat}&lon=${lon}&format=json&`,
-      transformResponse: (res: LocationType) => {
-        locationSchema.parse(res);
-        return res;
+      transformResponse: (response: LocationType) => {
+        locationSchema.parse(response);
+        return response;
       },
     }),
   }),
