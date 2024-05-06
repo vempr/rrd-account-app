@@ -2,6 +2,8 @@
 
 [AccStore](https://vempr.github.io/rrd-account-app/) is a single-page application built primarily for practicing React Router and layout design, after I took Scrimba's course. Users can browse and "buy" accounts fetched from the JSONPlaceholder API. Purchased accounts are displayed on the host page.
 
+<sub><sup>*There was an older repository for this project, but after not being to configure my env variables I just decided to replace the older repo.*</sup></sub>
+
 ## Stack
 - **Language**: React
 - **Type Checking:** TypeScript, Zod
